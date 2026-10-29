@@ -21,3 +21,12 @@ Get 10 best Prosculpt designs of each scenario, sorted by ddg.
 ```sh
 julia --threads=auto --project='/ceph/hpc/home/User/JulesEnv' /ceph/hpc/home/User/julči/best10ofScenario.jl '/ceph/hpc/home/User/julči/test.csv'
 ```
+
+## CtrlShiftF12_totp-v1.ahk
+Autofills your 2FA code, so you don't need to copy it from other applications.  
+On first run, it will ask you for your secret.  
+* `Ctrl` + `Shift` + `F12`: generates, types and confirms 2FA code
+    * Each code is only entered once. If you run it multiple times within 30 seconds, the time will be offset by +n*30 seconds, giving you future codes
+* `Ctrl` + `Shift` + `F11`: clears the time offset
+
+Requires AutoHotKey, tested with v1.1.33.02 (not tested with v2)
